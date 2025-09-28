@@ -1,0 +1,14 @@
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+/*.pdf
+*.gz
+*.toc
+*.xml
+*.bbl
+*.bcf
+*.blg
+!my_publication.pdf
+*.minted

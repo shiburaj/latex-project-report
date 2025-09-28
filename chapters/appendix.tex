@@ -1,0 +1,24 @@
+\appendix
+\chapter{Appendix}
+Detailed information, lengthy derivations, raw experimental observations etc.
+
+\begin{lstlisting}[caption={Random Forest training code}]
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+def load_data(file_path):
+	"""Load and preprocess credit card data"""
+	data = pd.read_csv(file_path)
+	X = data.drop('Class', axis=1)
+	y = data['Class']
+	return X, y
+
+def train_model(X, y):
+	"""Train Random Forest classifier"""
+	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+	model = RandomForestClassifier(n_estimators=100, random_state=42)
+	model.fit(X_train, y_train)
+	return model, X_test, y_test
+\end{lstlisting}

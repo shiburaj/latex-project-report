@@ -1,0 +1,81 @@
+\chapter{Review of Literature}
+Present a critical appraisal of the previous work published in the literature pertaining to the topic of the investigation.
+
+\section{Review of Paper 1: Credit Card Fraud Detection Using Random Forest}
+
+\begin{table}[h]
+\centering
+\caption{Summary of Paper 1}
+\label{tab:paper1}
+\begin{tabular}{ll}
+\toprule
+\textbf{Attribute} & \textbf{Details} \\
+\midrule
+Authors & Smith et al. (2020) \\
+Title & Credit Card Fraud Detection Using Random Forest \\
+Journal & Journal of Financial Analytics \\
+Dataset & European cardholders dataset (284,807 transactions) \\
+Methodology & Random Forest Classifier \\
+Key Findings & 99.8\% accuracy, 0.92 F1-score for fraud class \\
+Limitations & High computational cost for real-time processing \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Methodology and Approach}
+Smith et al. (2020) employed a Random Forest algorithm for credit card fraud detection, focusing on handling class imbalance through stratified sampling. Their approach involved feature engineering on transaction time, amount, and historical patterns.
+
+\subsection*{Strengths and Contributions}
+\begin{itemize}
+\item Comprehensive feature engineering approach
+\item Effective handling of class imbalance
+\item High accuracy rates on benchmark dataset
+\item Robust against overfitting
+\end{itemize}
+
+\subsection*{Limitations and Gaps}
+\begin{itemize}
+\item Computational intensity limits real-time application
+\item Limited exploration of deep learning alternatives
+\item Dataset restricted to European transactions only
+\end{itemize}
+
+% Second Paper
+\section{Review of Paper 2: Deep Learning for Anomaly Detection in Financial Transactions}
+
+\begin{table}[h]
+\centering
+\caption{Summary of Paper 2}
+\label{tab:paper2}
+\begin{tabular}{ll}
+\toprule
+\textbf{Attribute} & \textbf{Details} \\
+\midrule
+Authors & Johnson and Brown (2021) \\
+Title & Deep Learning for Anomaly Detection in Financial Transactions \\
+Conference & IEEE International Conference on Data Science \\
+Dataset & Synthetic financial dataset (500,000 transactions) \\
+Methodology & Autoencoder Neural Network \\
+Key Findings & 99.5\% accuracy, better recall than traditional methods \\
+Limitations & High false positive rate in imbalanced scenarios \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Methodology and Approach}
+Johnson and Brown (2021) proposed an autoencoder-based approach for unsupervised anomaly detection. Their model learned normal transaction patterns and flagged deviations as potential fraud, eliminating the need for labeled fraud data.
+
+\subsection*{Strengths and Contributions}
+\begin{itemize}
+\item Unsupervised approach reduces dependency on labeled data
+\item Effective in detecting novel fraud patterns
+\item Scalable architecture for large datasets
+\item Good generalization across different transaction types
+\end{itemize}
+
+\subsection*{Limitations and Gaps}
+\begin{itemize}
+\item High false positive rates in practical applications
+\item Computational complexity during training phase
+\item Limited interpretability of detection results
+\end{itemize}

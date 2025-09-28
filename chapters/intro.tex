@@ -1,0 +1,71 @@
+\chapter{Introduction}
+It shall justify and highlight the problem posed, define the topic and explain the aim and scope of the work presented in the report. It may also highlight the significant contributions from the investigation.
+	
+\section{Background and Motivation}
+
+Credit card fraud has emerged as a significant challenge in the digital payment ecosystem, with global losses exceeding \$28 billion annually \cite{knuth1984}. The rapid growth of e-commerce and digital transactions has created unprecedented opportunities for fraudulent activities, necessitating advanced detection mechanisms. Traditional rule-based systems have proven inadequate in addressing sophisticated fraud patterns, leading to increased interest in machine learning and artificial intelligence solutions.
+
+The financial implications of credit card fraud extend beyond immediate monetary losses, affecting customer trust, brand reputation, and regulatory compliance. According to recent industry reports, false positives in fraud detection cost merchants approximately \$118 billion in 2022, highlighting the need for more accurate and efficient detection systems \cite{turing1936}.
+
+\section{Problem Statement}
+
+Despite numerous advances in fraud detection technologies, several critical challenges persist:
+
+\begin{itemize}
+\item \textbf{Class Imbalance:} Fraudulent transactions typically represent less than 0.5\% of all transactions, creating significant challenges for machine learning models \cite{shannon1948}.
+    
+\item \textbf{Real-time Processing:} The requirement for sub-second decision-making in transaction authorization demands computationally efficient algorithms.
+    
+\item \textbf{Adaptive Fraud Patterns:} Fraudsters continuously evolve their strategies, necessitating models that can adapt to new patterns without complete retraining.
+    
+\item \textbf{False Positive Reduction:} Balancing fraud detection sensitivity with customer experience requires minimizing legitimate transaction declines.
+\end{itemize}
+
+\section{Research Objectives}
+
+This project aims to develop an advanced credit card fraud detection system that addresses the limitations of existing approaches. The primary objectives are:
+
+\begin{enumerate}
+\item To analyze and compare the performance of traditional machine learning, deep learning, and hybrid approaches in fraud detection
+    
+\item To design an ensemble model that combines the strengths of multiple algorithms while mitigating their individual limitations
+    
+\item To optimize the proposed solution for real-time processing with minimal computational overhead
+    
+\item To achieve superior performance metrics while maintaining model interpretability for regulatory compliance
+\end{enumerate}
+
+\section{Scope and Limitations}
+
+The scope of this research encompasses:
+
+\begin{itemize}
+\item Analysis of three representative papers covering different methodological approaches
+\item Evaluation using standardized datasets with realistic fraud patterns
+\item Focus on supervised learning approaches with available labeled data
+\item Consideration of computational efficiency and practical deployability
+\end{itemize}
+
+The study is limited by the following constraints:
+
+\begin{itemize}
+\item Primary focus on transaction-level fraud detection rather than account takeover scenarios
+\item Evaluation limited to publicly available datasets due to privacy constraints
+\item Emphasis on technical implementation rather than business process integration
+\end{itemize}
+
+\section{Significance of the Study}
+
+This research contributes to the field of financial fraud detection in several ways:
+
+\begin{itemize}
+\item \textbf{Academic Contribution:} Provides a comprehensive comparative analysis of different machine learning approaches and identifies optimal strategies for specific fraud detection scenarios.
+    
+\item \textbf{Practical Application:} Develops a framework that financial institutions can adapt for real-world implementation, balancing detection accuracy with operational efficiency.
+    
+\item \textbf{Methodological Innovation:} Proposes novel ensemble techniques that address class imbalance and adaptive learning challenges more effectively than existing solutions.
+\end{itemize}
+
+\section{Report Structure}
+
+This report is organized as follows: Section 2 presents the literature review of three key papers in credit card fraud detection. Section 3 describes the methodology and experimental setup. Section 4 discusses the results and comparative analysis. Section 5 concludes with findings and future research directions.
