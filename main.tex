@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper,twoside,openright]{report}
 
 % Packages
 \usepackage[utf8]{inputenc}
@@ -19,6 +19,11 @@
 \usepackage{multirow}
 \usepackage{listings}
 \usepackage{pdfpages}
+
+\usepackage{etoolbox}
+\makeatletter
+\pretocmd{\chapter}{\cleardoublepage}{}{}
+\makeatother
 
 % Enable text wrapping and define style
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -78,6 +83,7 @@
 
 % Start Here
 \begin{document}
+	%\pagenumbering{roman}
 	
 	\begin{titlepage}
 		\centering
@@ -103,6 +109,9 @@
 		\LARGE \textbf{University of Mumbai} \\
 		2025--2026 \\
 	\end{titlepage}
+	
+	\em
+	
 	
 	% Certificate
 	\chapter*{\centering \textit {Certificate}}
@@ -140,6 +149,8 @@
 	\normalsize {Off Carter Road, Bandra(W), Mumbai-400050.}
 	\end{center}
 	
+	
+	
 	% Declaration
 	\chapter*{Declaration}
 	I declare that this written submission represents my ideas in my own words and where others' ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
@@ -150,6 +161,7 @@
 		(Name of student and Roll No.) \\
 		Date:
 	\end{flushright}
+	
 	
 	% Abstract
 	\chapter*{Abstract}
@@ -168,20 +180,31 @@
 	\newpage
 	\listoftables
 	
+	%\clearpage
+	%\pagenumbering{arabic}
+	%\setcounter{page}{1}
+	
 	% Chapters
 	\include{chapters/intro}
 	
+	
 	\include{chapters/literature}
+	
 
 	\include{chapters/status}
 	
+	
 	\include{chapters/results}
+	
 
 	\include{chapters/conclusions}
 	
+	
 	\include{chapters/appendix}
 	
+	
 	\printbibliography
+	
 	
 	\include{acknowledgement}
 
